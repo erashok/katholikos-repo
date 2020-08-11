@@ -1,4 +1,4 @@
-package com.example.springapp;
+package com.ldapspring.ldap.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,13 +9,13 @@ import org.springframework.ldap.query.LdapQueryBuilder;
 import org.springframework.stereotype.Component;
 
 @Component
-public class AuthLdap {
+public class AuthLdapServiceUtility {
 	private final LdapTemplate ldapTemplate;
 	final static Logger logger = LoggerFactory
-	        .getLogger(AuthLdap.class);
+	        .getLogger(AuthLdapServiceUtility.class);
 
 	@Autowired
-	public AuthLdap(LdapTemplate ldapTemplate) {
+	public AuthLdapServiceUtility(LdapTemplate ldapTemplate) {
 		this.ldapTemplate = ldapTemplate;
 	}
 
